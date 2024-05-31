@@ -1,0 +1,284 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 8%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-image: url("green-dirty-blackboard.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.top-div {
+  background-color: #ffffff;
+  position: relative;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  padding-bottom: 0px;
+  background-image: url(https://img.freepik.com/free-vector/black-board-grunge-background_1409-2995.jpg?size=626&ext=jpg&ga=GA1.1.1490394785.1717101950&semt=ais_user);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.input {
+  height: 30px;
+  width: 80%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 40px;
+  flex-grow: 1;
+  padding-right: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-left: 20px;
+  color: black;
+  border-right: none;
+}
+.input-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+}
+.button {
+  right: 0;
+  padding: 10px 20px;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #048433;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  cursor: pointer;
+}
+.button1 {
+  right: 0;
+  padding: 10px 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #ff8e37;
+  color: white;
+  cursor: pointer;
+}
+.priority-select.low {
+  padding: 10px;
+  padding-right: 0px;
+  border: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+  background-color: #80c509;
+  color: white;
+  cursor: pointer;
+}
+.priority-select.medium {
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+  padding-right: 0px;
+  background-color: #fd9e21;
+  color: white;
+  cursor: pointer;
+}
+.priority-select.high {
+  padding-left: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-right: none;
+  padding-right: 0px;
+  background-color: #ff6868;
+  color: white;
+  cursor: pointer;
+}
+.todo-section {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  width: 35%;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 3px 6px 5px rgba(129, 129, 129, 0.223);
+  background-image: url("hi.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+.todo-list {
+  display: grid;
+  place-items: center;
+  max-height: 400px;
+  margin: 5px;
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.todo-item.low {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(237, 237, 237);
+  background-color: #1bff6b9c;
+  width: 90%;
+  border-radius: 10px;
+  color: #000000;
+  max-width: 100%;
+}
+.todo-item.medium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(237, 237, 237);
+  background-color: #ffbc64d6;
+  width: 90%;
+  border-radius: 10px;
+  color: #000000;
+  max-width: 100%;
+}
+.todo-item.high {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(237, 237, 237);
+  background-color: #ff6868bf;
+  width: 90%;
+  border-radius: 10px;
+  color: #000000;
+  max-width: 100%;
+}
+.icons {
+  color: #02984d;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.txt {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+.right {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.livetask {
+  height: 15%;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.147);
+  border: 1px solid rgba(255, 255, 255, 0.688);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  color: #ffffff;
+}
+.livetask-txt {
+  font-size: xx-large;
+  color: #ffffff;
+  font-weight: 900;
+  margin-top: 0px;
+}
+.txt {
+  overflow-x: scroll;
+}
+.checkbox1 {
+  height: 19px;
+  width: 19px;
+}
+@media (max-width: 897px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .todo-section {
+    max-height: 900px;
+    width: 80%;
+  }
+  .right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .livetask {
+    width: 100%;
+    height: 85%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow-y: scroll;
+  }
+  .todo-section {
+    width: 85%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .livetask {
+    width: 100%;
+    height: 85%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 487px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow-y: scroll;
+  }
+  .todo-section {
+    width: 85%;
+  }
+
+  .right {
+    display: grid;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .livetask {
+    width: 100%;
+    height: 85%;
+    text-align: center;
+  }
+}
